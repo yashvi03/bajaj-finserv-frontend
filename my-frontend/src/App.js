@@ -22,7 +22,7 @@ function App() {
 
         try {
             const data = JSON.parse(jsonInput);
-            const result = await axios.post('https://<your-heroku-app>.herokuapp.com/bfhl', { data });
+            const result = await axios.post('https://bajaj-finserv-2rfg.onrender.com/', { data });
             setResponse(result.data);
         } catch (error) {
             console.error('Invalid JSON or API error', error);
